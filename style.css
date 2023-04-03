@@ -1,125 +1,150 @@
 /* ヘッダー */
 header {
   height: 64px;
-  background-color: #333333; /* ダークネイビー */
+  background-color: #222;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
-header img.logo {
-  height: 40px;
-  margin-left: 16px;
+/* ロゴ */
+.logo {
+  font-size: 24px;
 }
 
-header nav {
-  margin-right: 16px;
-}
-
-header nav ul {
-  list-style: none;
+/* ナビゲーション */
+nav {
   display: flex;
 }
 
-header nav ul li {
-  margin-left: 16px;
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-header nav ul li a {
-  color: #ffffff;
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
   text-decoration: none;
 }
 
-header button {
-  background-color: #ffffff;
-  color: #333333; /* ダークネイビー */
+/* ログインボタン */
+.login-button {
+  background-color: #fff;
+  color: #222;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
-  margin-right: 16px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 /* ヒーローイメージ */
 .hero {
   height: 600px;
-  background-image: url('path/to/video.gif');
+  background-image: url("https://example.com/hero-image.jpg");
   background-size: cover;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
 }
 
+/* キャッチコピー */
 .hero h1 {
   font-size: 48px;
-  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* 会社のキャッチフレーズ */
+.company-catchphrase {
+  background-color: #f8f8f8;
+  padding: 40px;
   text-align: center;
-  text-shadow: 2px 2px 4px #000000;
 }
 
-/* セクション */
-section {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-section h2 {
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-/* 特徴 */
+/* 特徴のセクション */
 .features {
+  padding: 40px;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.feature {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 
-.features .feature {
-  width: 30%;
-  text-align: center;
+.feature img {
+  max-width: 50%;
+  margin-right: 40px;
 }
 
-.features .feature img {
-  height: 128px;
-  margin-bottom: 16px;
-}
-
-.features .feature h3 {
+.feature p {
   font-size: 24px;
-  margin-bottom: 16px;
+  line-height: 1.5;
 }
 
-.features .feature p {
-  font-size: 16px;
-}
-
-/* お知らせ */
+/* お知らせのセクション */
 .news {
-  display: flex;
-  justify-content: space-around;
+  background-color: #f8f8f8;
+  padding: 40px;
 }
 
-.news .item {
-  width: 30%;
-  background-color: #ffffff;
-  padding: 16px;
-  border-radius: 4px;
-  box-shadow: 2px 2px 4px #cccccc;
+.news h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
 }
 
-.news .item h3 {
+.news ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news li {
+  margin-bottom: 20px;
+}
+
+/* ログインフォーム */
+.login-form {
+  background-color: #f8f8f8;
+  padding: 40px;
+}
+
+.login-form label {
+  display: block;
   font-size: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
-.news .item p {
-  font-size: 16px;
-  margin-bottom: 8px;
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 20px;
 }
 
-.news .item time {
-  font-size: 12px;
-  color: #999999;
+.login-form input[type="submit"] {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
 }
