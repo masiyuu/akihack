@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>ましゆ</title>
-  <!-- CSSやJavaScriptのリンクを記述する -->
-</head>
-<body>
-  <header>
-    <h1>ましゆ</h1>
-    <nav>
-      <!-- グローバルナビゲーションのリンクを記述する -->
-    </nav>
-  </header>
-  <main>
-    <div class="slider">
-      <img src="image1.jpg" alt="スライダー画像1">
-      <img src="image2.jpg" alt="スライダー画像2">
-      <img src="image3.jpg" alt="スライダー画像3">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ましゆ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>ましゆ</h1>
+      <nav>
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="#">ログイン</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="slider">
+      <ul>
+        <li class="slide"><img src="img/slide1.jpg" alt="スライド1"></li>
+        <li class="slide"><img src="img/slide2.jpg" alt="スライド2"></li>
+        <li class="slide"><img src="img/slide3.jpg" alt="スライド3"></li>
+      </ul>
+      <div id="pager">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button id="prev"><</button>
+      <button id="next">></button>
     </div>
-    <div class="pager">
-      <span class="active">1</span>
-      <span>2</span>
-      <span>3</span>
-    </div>
-    <button class="prev">prev</button>
-    <button class="next">next</button>
-  </main>
-  <footer>
-    <!-- フッターの内容を記述する -->
-  </footer>
-  <!-- 必要なJavaScriptファイルを読み込む -->
-  <script src="slider.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
