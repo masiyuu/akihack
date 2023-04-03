@@ -1,80 +1,125 @@
-body {
-  background-color: #1a1a1a;
-  color: #fff;
-  font-family: sans-serif;
-}
-
+/* ヘッダー */
 header {
   height: 64px;
-  background-color: #333;
-  color: #fff;
+  background-color: #333333; /* ダークネイビー */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header a {
-  color: #fff;
+header img.logo {
+  height: 40px;
+  margin-left: 16px;
 }
 
-.hero-image {
+header nav {
+  margin-right: 16px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 16px;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header button {
+  background-color: #ffffff;
+  color: #333333; /* ダークネイビー */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+/* ヒーローイメージ */
+.hero {
   height: 600px;
-  background-color: #000;
-  background-image: url("path/to/video.mp4");
+  background-image: url('path/to/video.gif');
   background-size: cover;
-  background-position: center center;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-image h1 {
+.hero h1 {
   font-size: 48px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.catch-phrase {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 64px 0;
+/* セクション */
+section {
+  padding: 48px;
+  background-color: #f2f2f2;
+}
+
+section h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* 特徴 */
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 64px;
+}
+
+.features .feature {
+  width: 30%;
   text-align: center;
 }
 
-.feature-section {
-  background-color: #333;
-  color: #fff;
-  padding: 64px 0;
-  text-align: center;
-}
-
-.feature-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-.news-section {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 64px 0;
-  text-align: center;
-}
-
-.login-form {
-  background-color: #333;
-  color: #fff;
-  padding: 64px;
-  text-align: center;
-}
-
-.login-form input[type="text"],
-.login-form input[type="password"] {
-  width: 100%;
-  padding: 16px;
+.features .feature img {
+  height: 128px;
   margin-bottom: 16px;
-  border: none;
-  background-color: #fff;
-  color: #333;
 }
 
-.login-form button {
-  background-color: #fff;
-  color: #333;
-  border: none;
-  padding: 16px;
+.features .feature h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.features .feature p {
   font-size: 16px;
-  cursor: pointer;
+}
+
+/* お知らせ */
+.news {
+  display: flex;
+  justify-content: space-around;
+}
+
+.news .item {
+  width: 30%;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #cccccc;
+}
+
+.news .item h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.news .item p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.news .item time {
+  font-size: 12px;
+  color: #999999;
 }
