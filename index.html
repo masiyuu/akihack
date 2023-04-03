@@ -7,8 +7,10 @@
   </head>
   <body>
     <header>
-      <h1>ましゆ</h1>
-      <nav>
+      <div class="logo">
+        <h1>ましゆ</h1>
+      </div>
+      <nav class="global-nav">
         <ul>
           <li><a href="#">ホーム</a></li>
           <li><a href="#">お問い合わせ</a></li>
@@ -16,19 +18,30 @@
         </ul>
       </nav>
     </header>
-    <div id="slider">
-      <ul>
-        <li class="slide"><img src="slide1.jpg" alt="スライド1"></li>
-        <li class="slide"><img src="slide2.jpg" alt="スライド2"></li>
-        <li class="slide"><img src="slide3.jpg" alt="スライド3"></li>
+    <div class="slider">
+      <ul class="slides">
+        <li class="slide slide1">
+          <img src="img/slide1.jpg" alt="スライド1">
+          <div class="caption">スライド1のキャプション</div>
+        </li>
+        <li class="slide slide2">
+          <img src="img/slide2.jpg" alt="スライド2">
+          <div class="caption">スライド2のキャプション</div>
+        </li>
+        <li class="slide slide3">
+          <img src="img/slide3.jpg" alt="スライド3">
+          <div class="caption">スライド3のキャプション</div>
+        </li>
       </ul>
-      <div id="pager">
+      <div class="controls">
+        <button class="prev"><</button>
+        <button class="next">></button>
+      </div>
+      <div class="pager">
         <span class="active"></span>
         <span></span>
         <span></span>
       </div>
-      <button id="prev"><</button>
-      <button id="next">></button>
     </div>
     <script src="script.js"></script>
   </body>
