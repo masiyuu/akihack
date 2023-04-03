@@ -1,133 +1,125 @@
-/* Hero section */
-.hero-section {
-  height: 600px;
-  background-image: url('path/to/video.mp4');
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-section h1 {
-  font-size: 48px;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  margin-top: 150px;
-}
-
-/* Catchphrase section */
-.catchphrase-section {
-  background-color: #333;
-  color: #fff;
-  padding: 100px;
-}
-
-.catchphrase-section h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 50px;
-}
-
-/* Feature section */
-.feature-section {
-  background-color: #f5f5f5;
-  padding: 100px;
-}
-
-.feature-section h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 50px;
-}
-
-.feature-section .feature {
+/* ヘッダー */
+header {
+  height: 64px;
+  background-color: #333333; /* ダークネイビー */
   display: flex;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.feature-section .feature img {
-  width: 200px;
-  height: 200px;
-  margin-right: 50px;
+header img.logo {
+  height: 40px;
+  margin-left: 16px;
 }
 
-.feature-section .feature h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+header nav {
+  margin-right: 16px;
 }
 
-.feature-section .feature p {
-  font-size: 18px;
-  line-height: 1.5;
+header nav ul {
+  list-style: none;
+  display: flex;
 }
 
-/* News section */
-.news-section {
-  padding: 100px;
+header nav ul li {
+  margin-left: 16px;
 }
 
-.news-section h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 50px;
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.news-section .news-item {
-  margin-bottom: 50px;
+header button {
+  background-color: #ffffff;
+  color: #333333; /* ダークネイビー */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-right: 16px;
 }
 
-.news-section .news-item h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.news-section .news-item p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Login section */
-.login-section {
-  background-color: #333;
-  color: #fff;
-  padding: 100px;
-}
-
-.login-section h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 50px;
-}
-
-.login-section form {
+/* ヒーローイメージ */
+.hero {
+  height: 600px;
+  background-image: url('path/to/video.gif');
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
-.login-section label {
-  font-size: 18px;
-  margin-bottom: 10px;
+.hero h1 {
+  font-size: 48px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.login-section input[type="text"],
-.login-section input[type="password"] {
-  font-size: 18px;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
+/* セクション */
+section {
+  padding: 48px;
+  background-color: #f2f2f2;
 }
 
-.login-section input[type="submit"] {
-  background-color: #fff;
-  color: #333;
-  font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+section h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* 特徴 */
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 64px;
+}
+
+.features .feature {
+  width: 30%;
+  text-align: center;
+}
+
+.features .feature img {
+  height: 128px;
+  margin-bottom: 16px;
+}
+
+.features .feature h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.features .feature p {
+  font-size: 16px;
+}
+
+/* お知らせ */
+.news {
+  display: flex;
+  justify-content: space-around;
+}
+
+.news .item {
+  width: 30%;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #cccccc;
+}
+
+.news .item h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.news .item p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.news .item time {
+  font-size: 12px;
+  color: #999999;
 }
