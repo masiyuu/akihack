@@ -1,64 +1,75 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>Webサイト</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <a href="#"><img src="logo.png" alt="ロゴ"></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">ナビ1</a></li>
-          <li><a href="#">ナビ2</a></li>
-          <li><a href="#">ナビ3</a></li>
-        </ul>
-      </nav>
-      <div class="login">
-        <a href="#">ログイン</a>
-      </div>
-    </header>
-    <div class="hero-image">
-      <video src="video.mp4" autoplay muted loop></video>
-      <h1>キャッチコピー</h1>
-    </div>
-    <section class="catchphrase">
-      <h2>会社のキャッチフレーズ</h2>
-    </section>
-    <section class="features">
-      <h2>特徴</h2>
-      <div class="feature">
-        <img src="feature1.png" alt="特徴1">
-        <p>特徴1の説明文</p>
-      </div>
-      <div class="feature">
-        <img src="feature2.png" alt="特徴2">
-        <p>特徴2の説明文</p>
-      </div>
-      <div class="feature">
-        <img src="feature3.png" alt="特徴3">
-        <p>特徴3の説明文</p>
-      </div>
-    </section>
-    <section class="news">
-      <h2>お知らせ</h2>
-      <ul>
-        <li>お知らせ1</li>
-        <li>お知らせ2</li>
-        <li>お知らせ3</li>
-      </ul>
-    </section>
-    <footer>
-      <form>
-        <label for="username">ユーザー名:</label>
-        <input type="text" id="username" name="username">
-        <label for="password">パスワード:</label>
-        <input type="password" id="password" name="password">
-        <input type="submit" value="ログイン">
-      </form>
-    </footer>
-  </body>
+<html>
+<head>
+	<title>サイトタイトル</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#">ロゴ</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">ナビゲーション1</a></li>
+					<li><a href="#">ナビゲーション2</a></li>
+					<li><a href="#">ナビゲーション3</a></li>
+				</ul>
+			</nav>
+			<div class="login">
+				<a href="#">ログイン</a>
+			</div>
+		</div>
+	</header>
+
+	<section id="hero">
+		<div class="container">
+			<h1>キャッチコピー</h1>
+			<!-- 動画などのコンテンツをここに挿入 -->
+		</div>
+	</section>
+
+	<section id="catchphrase">
+		<div class="container">
+			<h2>会社のキャッチフレーズ</h2>
+		</div>
+	</section>
+
+	<section id="features">
+		<div class="container">
+			<div class="feature">
+				<img src="feature1.jpg">
+				<p>特徴1の説明文</p>
+			</div>
+			<div class="feature">
+				<img src="feature2.jpg">
+				<p>特徴2の説明文</p>
+			</div>
+			<div class="feature">
+				<img src="feature3.jpg">
+				<p>特徴3の説明文</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="news">
+		<div class="container">
+			<h2>お知らせ</h2>
+			<ul>
+				<li><a href="#">お知らせ1</a></li>
+				<li><a href="#">お知らせ2</a></li>
+				<li><a href="#">お知らせ3</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="login-form">
+		<div class="container">
+			<h2>ログインフォーム</h2>
+			<!-- フォームのHTMLをここに挿入 -->
+		</div>
+	</section>
+
+</body>
 </html>
