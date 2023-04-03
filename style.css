@@ -1,158 +1,66 @@
-/* ヘッダー */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  padding: 0 32px;
-  background-color: #333333;
-  color: #ffffff;
-}
-
-/* ロゴ */
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* ナビゲーション */
-nav {
-  display: flex;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin-left: 32px;
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/* ログインボタン */
-.login {
-  border: 2px solid #ffffff;
-  border-radius: 4px;
-  color: #ffffff;
-  padding: 8px 16px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* ヒーローイメージ */
-.hero {
-  height: 600px;
-  background-image: url("https://example.com/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  text-align: center;
-}
-
-/* キャッチコピー */
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 32px;
-}
-
-/* 会社のキャッチフレーズ */
-.company {
-  background-color: #f5f5f5;
-  padding: 64px 0;
-  text-align: center;
-}
-
-.company h2 {
-  font-size: 32px;
-}
-
-/* 特徴 */
-.features {
-  padding: 64px 0;
-  text-align: center;
-}
-
-.features h2 {
-  font-size: 32px;
-  margin-bottom: 32px;
-}
-
-.feature {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 32px;
-}
-
-.feature img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 16px;
-}
-
-.feature h3 {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-.feature p {
-  font-size: 16px;
-  line-height: 1.5;
-  max-width: 400px;
-  margin-bottom: 32px;
-}
-
-/* お知らせ */
-.news {
-  background-color: #f5f5f5;
-  padding: 64px 0;
-}
-
-.news h2 {
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.news ul {
-  list-style: none;
-  padding: 0;
-}
-
-.news li {
-  margin-bottom: 16px;
-}
-
-.news a {
-  color: #333333;
-  text-decoration: none;
-}
-
-.news a:hover {
-  text-decoration: underline;
-}
-
-/* ログインフォーム */
-.login-form {
-  background-color: #f5f5f5;
-  padding: 64px 32px;
-}
-
-.login-form label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 8px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>あきあき</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">ホーム</a></li>
+				<li><a href="#">あきについて</a></li>
+				<li><a href="#">あきグッズ</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+			</ul>
+		</nav>
+		<div class="login">
+			<a href="#">Login</a>
+		</div>
+	</header>
+	</section>
+	<section class="company-catchphrase">
+<iframe src="https://streamable.com/e/2410bf?autoplay=1&nocontrols=1" width="560" height="315" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+	</section>
+	<section class="features">
+		<h2>飽き飽き伝説集</h2>
+		<div class="feature-item">
+			<img src="feature1.png" alt="Feature 1">
+			<h3>大会沼</h3>
+			<p>そふと、ぼさがみ、ましゆの3人を大会の代理として誘い沼を展開する</p>
+		</div>
+		<div class="feature-item">
+			<img src="feature2.png" alt="Feature 2">
+			<h3>RMT沼</h3>
+			<p>RMTをしていたことをみんなに隠す</p>
+		</div>
+		<div class="feature-item">
+			<img src="feature3.png" alt="Feature 3">
+			<h3>ガチギレ沼</h3>
+			<p>レイナ即ピでフラグトップなのにフレンドの目の前で自分が弱いとガチギレ</p>
+		</div>
+	</section>
+	<section class="announcements">
+		<h2>おしらせ</h2>
+		<div class="announcement-item">
+			<h3>おしらせなし 1</h3>
+		</div>
+		<div class="announcement-item">
+			<h3>おしらせなし 2</h3>
+		</div>
+		<div class="announcement-item">
+			<h3>おしらせなし 3</h3>
+		</div>
+	</section>
+	<section class="login-form">
+		<h2>Login</h2>
+		<form>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username"><br><br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+</body>
+</html>
