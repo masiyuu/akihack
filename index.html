@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AkiHack</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+// Toggle the mobile menu on small screens
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileNav = document.querySelector(".mobile-nav");
+
+menuToggle.addEventListener("click", () => {
+  mobileNav.classList.toggle("open");
+});
+
+// Smooth scrolling for internal links
+const internalLinks = document.querySelectorAll('a[href^="#"]');
+
+internalLinks.forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+
+    const target = document.querySelector(link.getAttribute("href"));
+
+    target.scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
+    </script>
+  </head>
+  <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/kcfjpl?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
+  </video>
+  <div class="text-overlay">
+    <h1>#1 市場で最高のピラミッドゲームチート</h1>
+  </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>AkiHacks</h1>
+      <p>ピラミッドゲーム 100%Undetected Hacks</p>
+    </header>
+    <main>
+      <!-- Main content goes here -->
+    </main>
+    <footer>
+      <p>&copy; 2023 AkiHacks. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
