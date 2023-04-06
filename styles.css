@@ -91,3 +91,56 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
+
+  #purchase-section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .purchase-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .purchase-form h2 {
+    font-size: 2em;
+    margin-top: 0;
+  }
+  
+  .purchase-form p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .purchase-form input[type="text"],
+  .purchase-form input[type="email"],
+  .purchase-form input[type="number"],
+  .purchase-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .purchase-form input[type="submit"] {
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .purchase-form input[type="submit"]:hover {
+    background-color: #0D47A1;
+  }
